@@ -1,4 +1,5 @@
 import Input from './components/Input'
+import './App.scss'
 
 function App() {
   return (
