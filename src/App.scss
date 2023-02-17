@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  gap: 8px;
   &-left {
     display: flex;
     flex-direction: column;
@@ -16,5 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 

@@ -1,6 +1,8 @@
 import Input from './components/Input'
 import Button from './components/Button'
+import TextArea from './components/TextArea'
 import './App.scss'
+
 
 function App() {
   return (
@@ -10,9 +12,7 @@ function App() {
         <Button />
       </div>
       <div className='App-right'>
-        <input type='textarea'>
-          
-        </input>
+        <TextArea />
       </div>
     </div>
   );
