@@ -1,7 +1,9 @@
+import Input from './components/Input'
+
 function App() {
   return (
     <div className="App">
-      OpenAI Job
+      <Input />
     </div>
   );
 }
