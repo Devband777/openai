@@ -3,9 +3,19 @@ import './style.scss'
 function Button ({
     text="...edit me..."
 }) {
-    return (<div className="button">
-        {text}
-    </div>)
+    const test = async () => {
+    }
+
+    return (
+        <div 
+            className="button"
+            onClick={() => {
+                test()
+            }}
+        >
+            {text}
+        </div>
+    )
 }
 
 export default Button
