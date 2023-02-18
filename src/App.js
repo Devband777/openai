@@ -17,7 +17,7 @@ function App() {
     let form = document.getElementById ('form');
     let formData = new FormData (form);
 
-    let res = await axios.post ('http://localhost:5000/upload', formData);
+    let res = await axios.post (`${process.env.REACT_APP_SERVER}/upload`, formData);
     console.log(res)
     if(res.data.status) {
       setResult(res.data.msg.choices[0].text)
