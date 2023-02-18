@@ -1,17 +1,13 @@
 import './style.scss'
 
 function Button ({
-    text="...edit me..."
+    text="...edit me...",
+    onClick
 }) {
-    const test = async () => {
-    }
-
     return (
         <div 
             className="button"
-            onClick={() => {
-                test()
-            }}
+            onClick={onClick}
         >
             {text}
         </div>

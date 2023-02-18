@@ -1,11 +1,21 @@
+import { useState } from 'react';
 import './style.scss'
 
 function Input ({
-    placeholder = "Click to upload a file"
+    text = "Click to upload a file",
+    name = "",
+    value,
+    onChange
 }) {
     return (<div className="input">
-        <label for="upload-photo">{placeholder}</label>
-        <input type="file" name="photo" id="upload-photo" />
+        <label for="upload-resume">{text}</label>
+        <input 
+            type="file" 
+            value={value}
+            name={name} 
+            id="upload-resume" 
+            onChange={onChange}
+        />
     </div>)
 }
 

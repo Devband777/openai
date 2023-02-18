@@ -5,6 +5,7 @@ function TextArea ({
 }) {
     return (<div className="textarea">
         <textarea 
+            value={text}
         />
     </div>)
 }
