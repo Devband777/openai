@@ -20,7 +20,7 @@ function App() {
     let res = await axios.post (`${process.env.REACT_APP_SERVER}/upload`, formData);
     console.log(res)
     if(res.data.status) {
-      setResult(res.data.msg.choices[0].text)
+      setResult(res.data.msg)
     }
 
     // do something
